@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :about, only: [:index]
+
   get 'static_pages/help'
   get 'static_pages/faq'
   get 'static_pages/about'
